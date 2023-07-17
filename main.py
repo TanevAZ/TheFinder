@@ -32,7 +32,7 @@ def main():
     for root, dirs, files in os.walk(directory):
         for name in files:
             if name == file:
-                print(f'{Fore.RESET}File {Fore.LIGHTGREEN_EX}found(s){Fore.RESET} in : {root}')
+                print(f'{Fore.RESET}File {Fore.LIGHTGREEN_EX}found(s){Fore.RESET} in : {root}\\{name}')
                 found = True
     if not found:
         print(f'{Fore.RESET}File not {Fore.LIGHTRED_EX}found{Fore.RESET}')
